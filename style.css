@@ -1,0 +1,214 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+:root {
+	--sizeindex: calc(1vw + 1vh);
+}
+
+
+
+body {
+	background-color: #212742;
+	font-family: 'Poppins', sans-serif;
+	max-height: 800px;
+	/* overflow: hidden;
+	position: relative;
+	 */
+}
+
+
+.block1 {
+
+	width: 60%;
+	/* height: 116vw; */
+	background-color: white;
+	margin-left: 3%;
+	margin-top: 20%;
+	padding: 2% 10%;
+
+	border-radius: 15px 15px 0px 0px;
+
+	position: static;
+	z-index: 5;
+	vertical-align: bottom;
+	/* display: none; */
+}
+
+
+
+.art-logo {
+	width: 120%;
+
+}
+
+
+ul,
+.art-telephone {
+
+	font-size: calc(var(--sizeindex) * 0.35);
+	margin-left: 5%;
+}
+
+
+.art-telephone {
+	color: rgb(206, 185, 100)
+}
+
+.art-header {
+	flex-wrap: nowrap;
+	border-bottom: 0rem !important;
+	box-sizing: content-box;
+}
+
+.art-phone {
+	width: 10%;
+}
+
+.art-paragraph {
+	font-size: calc(var(--sizeindex) * 0.75);
+
+}
+
+.art-quote {
+	font-size: calc(var(--sizeindex) * 1.5);
+	font-weight: 700;
+}
+
+
+.art-btn {
+	background-color: #3A4574;
+	border-color: #3A4574;
+	padding: 10px 15px;
+	border-radius: 0;
+	font-size: calc(var(--sizeindex) * 0.6);
+}
+
+img {
+	width: calc(var(--sizeindex) * 0.9);
+}
+
+.art-ul {
+	width: 30%;
+	/* justify-content: flex-end; */
+	/* gap: 5% */
+}
+
+.atr-li {
+	/* display: inline-flex; */
+	/* flex-wrap: nowrap; */
+
+	width: 20px;
+}
+
+
+
+form {
+	background-image: url(img/Image.png);
+
+	color: aliceblue;
+	text-shadow: 1px 1px 1px black;
+}
+
+.painting {
+	width: 100%;
+	/* height: 100px; */
+	z-index: 2;
+}
+
+
+
+hr {
+	width: 70%;
+	font-size: ;
+}
+
+.art-dishName {
+	font-weight: 700;
+	font-size: calc(var(--sizeindex) * 0.6);
+
+}
+
+.art-text {
+	font-size: calc(var(--sizeindex) * 0.4);
+	margin: 0px;
+
+}
+
+
+.art-menu {
+
+	align-items: flex-end;
+
+}
+
+/* block 2  */
+
+.block2 {
+
+	width: 60%;
+	height: 96vh;
+	background-color: rgb(255, 255, 255);
+	left: 35%;
+	top: 0rem;
+	/* padding: 0% 0%; */
+
+	border-radius: 0px 0px 15px 15px;
+	z-index: -1;
+	position: absolute;
+	vertical-align: top;
+
+}
+
+.atr-line {
+	height: 29px;
+
+
+}
+
+
+.art-blueLine {
+	background-color: rgb(58, 69, 116);
+	height: 265px;
+	/* position: absolute; */
+	/* padding: 2% 10%; */
+	/* margin: 0em; */
+}
+
+.art-h2,
+.text2 {
+	margin-left: 10%;
+}
+
+.art-switch {
+	font-size: calc(var(--sizeindex) * 1.5);
+}
+
+.art-switch1,
+.art-switch2 {
+	color: whitesmoke;
+}
+
+.art-switch1:hover,
+.art-switch2:hover {
+	color: rgb(171, 178, 185);
+}
+
+/* swiper */
+
+.swiper {
+	/* width: 700px; */
+	/* height: 100%; */
+}
+
+.swiper-wrapper {
+	display: flex;
+	gap: 2%;
+	/* width: 150%; */
+	height: 50;
+}
+
+
+.slide {
+	width: 100%;
+	margin-left: 18%;
+	/* margin-right: 20%; */
+}
