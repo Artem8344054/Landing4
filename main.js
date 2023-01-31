@@ -1,7 +1,7 @@
 // form submission
 
 $(document).ready(function () {
-
+    
 	$('form').submit(function (event) {
 
 		event.preventDefault();
@@ -19,6 +19,7 @@ $(document).ready(function () {
 		});
 	});
 });
+
 
 // swiper
 
