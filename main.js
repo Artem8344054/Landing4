@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 // swiper
 
-const swiper = new swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
 	slidesPerView: 2,
 	// spaceBetween: 30,
 	slidesPerGroup: 1,
