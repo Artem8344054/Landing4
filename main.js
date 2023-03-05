@@ -1,30 +1,30 @@
 // form submission
 
-$(document).ready(function () {
-    
-	$('form').submit(function (event) {
+// $(document).ready(function () {
 
-		event.preventDefault();
+// 	$('form').submit(function (event) {
 
-		$.ajax({
-			type: $(this).attr('method'),
-			url: $(this).attr('action'),
-			data: new FormData(this),
-			contentType: false,
-			cache: false,
-			processData: false,
-			success: function (result) {
-				alert('Sent!')
-			}
-		});
-	});
-});
+// 		event.preventDefault();
+
+// 		$.ajax({
+// 			type: $(this).attr('method'),
+// 			url: $(this).attr('action'),
+// 			data: new FormData(this),
+// 			contentType: false,
+// 			cache: false,
+// 			processData: false,
+// 			success: function (result) {
+// 				alert('Sent!')
+// 			}
+// 		});
+// 	});
+// });
 
 
 // swiper
 
-const swiper = new Swiper('.swiper', {
-	slidesPerView: 1.5,
+const swiper = new swiper('.swiper', {
+	slidesPerView: 2,
 	// spaceBetween: 30,
 	slidesPerGroup: 1,
 	loop: true,
@@ -43,8 +43,8 @@ const swiper = new Swiper('.swiper', {
 
 	// Navigation arrows
 	navigation: {
-		nextEl: '.art-switch1',
-		prevEl: '.art-switch2',
+		nextEl: '.art-switch1End',
+		prevEl: '.art-switch2End',
 	},
 
 	// And if we need scrollbar
