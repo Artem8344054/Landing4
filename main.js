@@ -1,24 +1,60 @@
 // form submission
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
-	$('form').submit(function (event) {
+// 	$('form').submit(function (event) {
 
-		event.preventDefault();
+// 		event.preventDefault();
 
-		$.ajax({
-			type: $(this).attr('method'),
-			url: $(this).attr('action'),
-			data: new FormData(this),
-			contentType: false,
-			cache: false,
-			processData: false,
-			success: function (result) {
-				alert('Sent!')
-			}
-		});
+// 		$.ajax({
+// 			type: $(this).attr('method'),
+// 			url: $(this).attr('action'),
+// 			data: new FormData(this),
+// 			contentType: false,
+// 			cache: false,
+// 			processData: false,
+// 			success: function (result) {
+// 				alert('Sent!')
+// 			}
+// 		});
+// 	});
+// });
+
+
+jQuery(document).ready(function () {
+
+	$(".phone").mask("+7(999) 999-99-99");
+
+
+	jQuery('.send-form').click(function () {
+		var form = jQuery(this).closest('form');
+
+		if (form.valid()) {
+			form.css('opacity', '.5');
+			var actUrl = form.attr('action');
+
+			jQuery.ajax({
+				url: actUrl,
+				type: 'post',
+				dataType: 'html',
+				data: form.serialize(),
+				success: function (data) {
+					form.html(data);
+					form.css('opacity', '1');
+					//form.find('.status').html('форма отправлена успешно');
+					//$('#myModal').modal('show') // для бутстрапа
+				},
+				error: function () {
+					form.find('.status').html('серверная ошибка');
+				}
+			});
+		}
 	});
+
 });
+
+
+
 
 
 // swiper
