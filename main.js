@@ -23,10 +23,10 @@
 
 jQuery(document).ready(function () {
 
-	$(".phone").mask("+7(999) 999-99-99");
+	$(".phone").mask("+380 (99) 999-99-99");
 
 
-	jQuery('.send-form').click(function () {
+	jQuery('form').click(function () {
 		var form = jQuery(this).closest('form');
 
 		if (form.valid()) {
@@ -41,15 +41,16 @@ jQuery(document).ready(function () {
 				success: function (data) {
 					form.html(data);
 					form.css('opacity', '1');
-					//form.find('.status').html('форма отправлена успешно');
-					//$('#myModal').modal('show') // для бутстрапа
+					form.find('.status').html('form submitted successfully!!!');
+					$('#exampleModal').modal('show') // для бутстрапа
 				},
 				error: function () {
-					form.find('.status').html('серверная ошибка');
+					form.find('.status').html('Error server');
 				}
 			});
 		}
 	});
+
 
 });
 
